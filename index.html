@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyStore - Official Store</title>
+    <title>MyStore</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
             <div class="nav-left">
                 <a href="#" class="nav-link">MEN</a>
                 <a href="#" class="nav-link">WOMEN</a>
@@ -24,56 +24,68 @@
                 <a href="#" class="nav-link">ACCOUNT</a>
                 <a href="#" class="nav-link">CART (0)</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">YEEZY BOOST 350 V2</h1>
-            <p class="hero-subtitle">AVAILABLE NOW</p>
+            <p class="hero-subtitle">CREAM WHITE</p>
+            <div class="hero-price">$220</div>
             <div class="hero-actions">
                 <a href="products.html" class="btn-primary">SHOP NOW</a>
-                <a href="#" class="btn-secondary">VIEW DETAILS</a>
             </div>
         </div>
         <div class="hero-image">
-            <div class="sneaker-placeholder"></div>
+            <div class="sneaker-visual"></div>
         </div>
     </section>
 
     <!-- Featured Products -->
     <section class="featured">
-        <div class="container">
-            <h2 class="section-title">FEATURED</h2>
+        <div class="featured-container">
+            <h2 class="featured-title">FEATURED</h2>
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-item">
                     <div class="product-image">
-                        <div class="sneaker-placeholder-small"></div>
+                        <div class="sneaker-placeholder"></div>
                     </div>
-                    <h3 class="product-name">YEEZY BOOST 350 V2</h3>
-                    <p class="product-price">$220</p>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">CREAM WHITE</p>
+                        <p class="product-price">$220</p>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-item">
                     <div class="product-image">
-                        <div class="sneaker-placeholder-small"></div>
+                        <div class="sneaker-placeholder"></div>
                     </div>
-                    <h3 class="product-name">YEEZY 500</h3>
-                    <p class="product-price">$200</p>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 500</h3>
+                        <p class="product-color">BONE WHITE</p>
+                        <p class="product-price">$200</p>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-item">
                     <div class="product-image">
-                        <div class="sneaker-placeholder-small"></div>
+                        <div class="sneaker-placeholder"></div>
                     </div>
-                    <h3 class="product-name">YEEZY 700</h3>
-                    <p class="product-price">$300</p>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 700</h3>
+                        <p class="product-color">WAVE RUNNER</p>
+                        <p class="product-price">$300</p>
+                    </div>
                 </div>
-                <div class="product-card">
+                <div class="product-item">
                     <div class="product-image">
-                        <div class="sneaker-placeholder-small"></div>
+                        <div class="sneaker-placeholder"></div>
                     </div>
-                    <h3 class="product-name">YEEZY SLIDE</h3>
-                    <p class="product-price">$70</p>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY SLIDE</h3>
+                        <p class="product-color">BONE</p>
+                        <p class="product-price">$70</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,7 +93,7 @@
 
     <!-- Newsletter -->
     <section class="newsletter">
-        <div class="container">
+        <div class="newsletter-container">
             <h2 class="newsletter-title">STAY UPDATED</h2>
             <p class="newsletter-subtitle">Get the latest drops and exclusive access</p>
             <form class="newsletter-form">
@@ -93,7 +105,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">CUSTOMER SERVICE</h3>

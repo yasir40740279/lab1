@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - MyStore</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
             <div class="nav-left">
                 <a href="#" class="nav-link">MEN</a>
                 <a href="#" class="nav-link">WOMEN</a>
@@ -24,12 +24,12 @@
                 <a href="#" class="nav-link">ACCOUNT</a>
                 <a href="#" class="nav-link">CART (0)</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
+        <div class="page-header-container">
             <h1 class="page-title">ALL PRODUCTS</h1>
             <p class="page-subtitle">Discover our complete collection</p>
         </div>
@@ -37,10 +37,10 @@
 
     <!-- Filter Section -->
     <section class="filters">
-        <div class="container">
+        <div class="filters-container">
             <div class="filter-bar">
                 <div class="filter-group">
-                    <label class="filter-label">Category:</label>
+                    <label class="filter-label">CATEGORY</label>
                     <select class="filter-select">
                         <option>All Products</option>
                         <option>YEEZY BOOST 350 V2</option>
@@ -50,7 +50,7 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label class="filter-label">Size:</label>
+                    <label class="filter-label">SIZE</label>
                     <select class="filter-select">
                         <option>All Sizes</option>
                         <option>7</option>
@@ -62,7 +62,7 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label class="filter-label">Sort by:</label>
+                    <label class="filter-label">SORT BY</label>
                     <select class="filter-select">
                         <option>Newest</option>
                         <option>Price: Low to High</option>
@@ -76,162 +76,96 @@
 
     <!-- Products Grid -->
     <section class="products-section">
-        <div class="container">
+        <div class="products-container">
             <div class="products-grid">
                 <!-- Product 1 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                         <div class="product-badge">NEW</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY BOOST 350 V2 "CREAM WHITE"</h3>
-                        <p class="product-description">The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit.</p>
-                        <div class="product-price-large">$220</div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">CREAM WHITE</p>
+                        <p class="product-price">$220</p>
                     </div>
                 </div>
 
                 <!-- Product 2 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY BOOST 350 V2 "ZEBRA"</h3>
-                        <p class="product-description">The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit.</p>
-                        <div class="product-price-large">$220</div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">ZEBRA</p>
+                        <p class="product-price">$220</p>
                     </div>
                 </div>
 
                 <!-- Product 3 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                         <div class="product-badge sale">SALE</div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY 500 "BONE WHITE"</h3>
-                        <p class="product-description">The YEEZY 500 features a full-length adidas BOOST midsole and a premium upper.</p>
-                        <div class="product-price-large">
+                        <h3 class="product-name">YEEZY 500</h3>
+                        <p class="product-color">BONE WHITE</p>
+                        <p class="product-price">
                             <span class="price-original">$200</span>
                             <span class="price-sale">$150</span>
-                        </div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Product 4 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY 700 "WAVE RUNNER"</h3>
-                        <p class="product-description">The YEEZY 700 features a full-length adidas BOOST midsole and a premium upper.</p>
-                        <div class="product-price-large">$300</div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <h3 class="product-name">YEEZY 700</h3>
+                        <p class="product-color">WAVE RUNNER</p>
+                        <p class="product-price">$300</p>
                     </div>
                 </div>
 
                 <!-- Product 5 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY SLIDE "BONE"</h3>
-                        <p class="product-description">The YEEZY SLIDE features a one-piece EVA foam construction.</p>
-                        <div class="product-price-large">$70</div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <h3 class="product-name">YEEZY SLIDE</h3>
+                        <p class="product-color">BONE</p>
+                        <p class="product-price">$70</p>
                     </div>
                 </div>
 
                 <!-- Product 6 -->
-                <div class="product-card-large">
-                    <div class="product-image-large">
-                        <div class="sneaker-placeholder-large"></div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name-large">YEEZY BOOST 350 V2 "STATIC"</h3>
-                        <p class="product-description">The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit.</p>
-                        <div class="product-price-large">$220</div>
-                        <div class="product-sizes">
-                            <span class="size-label">Sizes:</span>
-                            <div class="size-options">
-                                <span class="size-option">7</span>
-                                <span class="size-option">8</span>
-                                <span class="size-option">9</span>
-                                <span class="size-option">10</span>
-                                <span class="size-option">11</span>
-                            </div>
-                        </div>
-                        <button class="add-to-cart">ADD TO CART</button>
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">STATIC</p>
+                        <p class="product-price">$220</p>
                     </div>
                 </div>
             </div>
 
             <!-- Load More Button -->
             <div class="load-more">
-                <button class="btn-secondary">LOAD MORE PRODUCTS</button>
+                <button class="btn-primary">LOAD MORE PRODUCTS</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">CUSTOMER SERVICE</h3>

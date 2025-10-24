@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEEZY BOOST 350 V2 - MyStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-link">MEN</a>
+                <a href="#" class="nav-link">WOMEN</a>
+                <a href="#" class="nav-link">KIDS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo">MyStore</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">SEARCH</a>
+                <a href="#" class="nav-link">ACCOUNT</a>
+                <a href="cart.html" class="nav-link">CART (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="products.html" class="breadcrumb-link">Products</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">YEEZY BOOST 350 V2</span>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <div class="sneaker-visual-large"></div>
+                </div>
+                <div class="thumbnail-gallery">
+                    <div class="thumbnail active">
+                        <div class="sneaker-thumbnail"></div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="sneaker-thumbnail"></div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="sneaker-thumbnail"></div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="sneaker-thumbnail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-badges">
+                    <span class="product-badge">NEW</span>
+                    <span class="product-badge">LIMITED</span>
+                </div>
+                
+                <h1 class="product-title">YEEZY BOOST 350 V2</h1>
+                <p class="product-subtitle">CREAM WHITE</p>
+                
+                <div class="product-price">
+                    <span class="current-price">$220</span>
+                    <span class="original-price">$250</span>
+                </div>
+
+                <div class="product-description">
+                    <p>The YEEZY BOOST 350 V2 continues to push the boundaries of sneaker design. Featuring a Primeknit upper and full-length BOOST midsole, this silhouette delivers comfort and style in equal measure.</p>
+                </div>
+
+                <div class="product-options">
+                    <div class="size-selection">
+                        <h3 class="option-title">SIZE</h3>
+                        <div class="size-grid">
+                            <button class="size-btn" data-size="7">7</button>
+                            <button class="size-btn" data-size="8">8</button>
+                            <button class="size-btn" data-size="9">9</button>
+                            <button class="size-btn" data-size="10">10</button>
+                            <button class="size-btn" data-size="11">11</button>
+                            <button class="size-btn" data-size="12">12</button>
+                        </div>
+                        <a href="#" class="size-guide-link">Size Guide</a>
+                    </div>
+
+                    <div class="quantity-selection">
+                        <h3 class="option-title">QUANTITY</h3>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="quantity-minus">-</button>
+                            <span class="quantity-display" id="quantity-value">1</span>
+                            <button class="quantity-btn" id="quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="btn-add-cart" id="add-to-cart">ADD TO CART</button>
+                    <button class="btn-wishlist">ADD TO WISHLIST</button>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature-item">
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $100</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>30-Day Returns</h4>
+                        <p>Easy returns and exchanges</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Authentic Guarantee</h4>
+                        <p>100% authentic products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                <button class="tab-btn" data-tab="specifications">SPECIFICATIONS</button>
+                <button class="tab-btn" data-tab="reviews">REVIEWS (24)</button>
+            </div>
+            <div class="tabs-content">
+                <div class="tab-panel active" id="description">
+                    <h3>Product Description</h3>
+                    <p>The YEEZY BOOST 350 V2 "Cream White" features a clean, minimalist design that has become iconic in the sneaker world. The upper is constructed from Primeknit material, providing a sock-like fit that adapts to your foot. The full-length BOOST midsole delivers responsive cushioning, while the rubber outsole provides durable traction.</p>
+                    <ul>
+                        <li>Primeknit upper for breathability and comfort</li>
+                        <li>Full-length BOOST midsole for responsive cushioning</li>
+                        <li>Rubber outsole with Continental rubber for traction</li>
+                        <li>Pull tab on heel for easy on/off</li>
+                        <li>Reflective side stripe for visibility</li>
+                    </ul>
+                </div>
+                <div class="tab-panel" id="specifications">
+                    <h3>Specifications</h3>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Brand</td>
+                            <td>Adidas x YEEZY</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>BOOST 350 V2</td>
+                        </tr>
+                        <tr>
+                            <td>Colorway</td>
+                            <td>Cream White</td>
+                        </tr>
+                        <tr>
+                            <td>Upper Material</td>
+                            <td>Primeknit</td>
+                        </tr>
+                        <tr>
+                            <td>Midsole</td>
+                            <td>BOOST</td>
+                        </tr>
+                        <tr>
+                            <td>Outsole</td>
+                            <td>Rubber</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>12.5 oz</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-panel" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-summary">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.8 out of 5</span>
+                        </div>
+                        <p>Based on 24 reviews</p>
+                    </div>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <span class="reviewer-name">Alex M.</span>
+                                <span class="review-rating">★★★★★</span>
+                            </div>
+                            <p class="review-text">"Amazing comfort and style. The BOOST technology really makes a difference for all-day wear."</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <span class="reviewer-name">Sarah K.</span>
+                                <span class="review-rating">★★★★★</span>
+                            </div>
+                            <p class="review-text">"Perfect fit and the cream white color goes with everything. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="related-container">
+            <h2 class="related-title">YOU MIGHT ALSO LIKE</h2>
+            <div class="related-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">ZEBRA</p>
+                        <p class="product-price">$220</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 500</h3>
+                        <p class="product-color">BONE WHITE</p>
+                        <p class="product-price">$200</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 700</h3>
+                        <p class="product-color">WAVE RUNNER</p>
+                        <p class="product-price">$300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">CUSTOMER SERVICE</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">FOLLOW US</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MyStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cart functionality
+        let cartCount = 0;
+        let selectedSize = null;
+        let quantity = 1;
+
+        // Size selection
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                selectedSize = this.dataset.size;
+            });
+        });
+
+        // Quantity controls
+        document.getElementById('quantity-minus').addEventListener('click', function() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('quantity-value').textContent = quantity;
+            }
+        });
+
+        document.getElementById('quantity-plus').addEventListener('click', function() {
+            quantity++;
+            document.getElementById('quantity-value').textContent = quantity;
+        });
+
+        // Add to cart
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            if (!selectedSize) {
+                alert('Please select a size');
+                return;
+            }
+            
+            cartCount += quantity;
+            document.getElementById('cart-count').textContent = cartCount;
+            
+            // Show success message
+            this.textContent = 'ADDED TO CART';
+            this.style.background = '#000';
+            this.style.color = '#fff';
+            
+            setTimeout(() => {
+                this.textContent = 'ADD TO CART';
+                this.style.background = 'transparent';
+                this.style.color = '#000';
+            }, 2000);
+        });
+
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.dataset.tab;
+                
+                // Remove active class from all tabs and panels
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding panel
+                this.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Thumbnail gallery
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

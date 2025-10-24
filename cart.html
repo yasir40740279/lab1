@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MyStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-link">MEN</a>
+                <a href="#" class="nav-link">WOMEN</a>
+                <a href="#" class="nav-link">KIDS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo">MyStore</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">SEARCH</a>
+                <a href="#" class="nav-link">ACCOUNT</a>
+                <a href="cart.html" class="nav-link">CART (<span id="cart-count">2</span>)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">SHOPPING CART</h1>
+            <p class="page-subtitle">Review your items before checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <div class="cart-content">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <div class="sneaker-placeholder"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">YEEZY BOOST 350 V2</h3>
+                            <p class="item-color">CREAM WHITE</p>
+                            <p class="item-size">Size: 10</p>
+                            <div class="item-price">$220</div>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                                <span class="quantity-display">1</span>
+                                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">$220</div>
+                        <button class="remove-btn" onclick="removeItem(this)">×</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <div class="sneaker-placeholder"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">YEEZY 500</h3>
+                            <p class="item-color">BONE WHITE</p>
+                            <p class="item-size">Size: 9</p>
+                            <div class="item-price">$200</div>
+                        </div>
+                        <div class="item-quantity">
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                                <span class="quantity-display">1</span>
+                                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="item-total">$200</div>
+                        <button class="remove-btn" onclick="removeItem(this)">×</button>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3 class="summary-title">ORDER SUMMARY</h3>
+                    <div class="summary-line">
+                        <span>Subtotal (2 items)</span>
+                        <span>$420.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Shipping</span>
+                        <span>FREE</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Tax</span>
+                        <span>$33.60</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total</span>
+                        <span>$453.60</span>
+                    </div>
+                    <button class="btn-checkout">PROCEED TO CHECKOUT</button>
+                    <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Form (Hidden by default) -->
+    <section class="checkout-section" id="checkout-form" style="display: none;">
+        <div class="checkout-container">
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <h2 class="checkout-title">CHECKOUT</h2>
+                    
+                    <!-- Shipping Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">SHIPPING INFORMATION</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>City</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>State</label>
+                                <select required>
+                                    <option value="">Select State</option>
+                                    <option value="CA">California</option>
+                                    <option value="NY">New York</option>
+                                    <option value="TX">Texas</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>ZIP Code</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">PAYMENT INFORMATION</h3>
+                        <div class="form-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV</label>
+                                <input type="text" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Name on Card</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="checkout-summary">
+                        <h3 class="summary-title">ORDER SUMMARY</h3>
+                        <div class="summary-line">
+                            <span>YEEZY BOOST 350 V2 (Size 10)</span>
+                            <span>$220.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>YEEZY 500 (Size 9)</span>
+                            <span>$200.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <span>$420.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Shipping</span>
+                            <span>FREE</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Tax</span>
+                            <span>$33.60</span>
+                        </div>
+                        <div class="summary-line total">
+                            <span>Total</span>
+                            <span>$453.60</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-place-order">PLACE ORDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation (Hidden by default) -->
+    <section class="order-confirmation" id="order-confirmation" style="display: none;">
+        <div class="confirmation-container">
+            <div class="confirmation-content">
+                <div class="success-icon">✓</div>
+                <h2 class="confirmation-title">ORDER CONFIRMED!</h2>
+                <p class="confirmation-message">Thank you for your purchase. Your order has been placed successfully.</p>
+                <div class="order-details">
+                    <p><strong>Order Number:</strong> #12345</p>
+                    <p><strong>Estimated Delivery:</strong> 3-5 business days</p>
+                    <p><strong>Total Amount:</strong> $453.60</p>
+                </div>
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn-primary">Continue Shopping</a>
+                    <a href="#" class="btn-secondary">Track Order</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">CUSTOMER SERVICE</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">FOLLOW US</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MyStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cart functionality
+        function updateQuantity(button, change) {
+            const quantityDisplay = button.parentElement.querySelector('.quantity-display');
+            const currentQuantity = parseInt(quantityDisplay.textContent);
+            const newQuantity = Math.max(1, currentQuantity + change);
+            
+            quantityDisplay.textContent = newQuantity;
+            updateItemTotal(button.closest('.cart-item'));
+            updateCartTotal();
+        }
+
+        function updateItemTotal(cartItem) {
+            const price = parseFloat(cartItem.querySelector('.item-price').textContent.replace('$', ''));
+            const quantity = parseInt(cartItem.querySelector('.quantity-display').textContent);
+            const total = price * quantity;
+            
+            cartItem.querySelector('.item-total').textContent = '$' + total.toFixed(2);
+        }
+
+        function removeItem(button) {
+            const cartItem = button.closest('.cart-item');
+            cartItem.remove();
+            updateCartTotal();
+        }
+
+        function updateCartTotal() {
+            const cartItems = document.querySelectorAll('.cart-item');
+            let subtotal = 0;
+            
+            cartItems.forEach(item => {
+                const total = parseFloat(item.querySelector('.item-total').textContent.replace('$', ''));
+                subtotal += total;
+            });
+            
+            const tax = subtotal * 0.08; // 8% tax
+            const total = subtotal + tax;
+            
+            // Update summary
+            document.querySelector('.summary-line:nth-child(1) span:last-child').textContent = '$' + subtotal.toFixed(2);
+            document.querySelector('.summary-line:nth-child(3) span:last-child').textContent = '$' + tax.toFixed(2);
+            document.querySelector('.summary-line.total span:last-child').textContent = '$' + total.toFixed(2);
+            
+            // Update cart count
+            const totalItems = Array.from(cartItems).reduce((sum, item) => {
+                return sum + parseInt(item.querySelector('.quantity-display').textContent);
+            }, 0);
+            document.getElementById('cart-count').textContent = totalItems;
+        }
+
+        // Checkout functionality
+        document.querySelector('.btn-checkout').addEventListener('click', function() {
+            document.querySelector('.cart-section').style.display = 'none';
+            document.getElementById('checkout-form').style.display = 'block';
+        });
+
+        // Place order
+        document.querySelector('.btn-place-order').addEventListener('click', function() {
+            document.getElementById('checkout-form').style.display = 'none';
+            document.getElementById('order-confirmation').style.display = 'block';
+        });
+
+        // Initialize cart total
+        updateCartTotal();
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MyStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-link">MEN</a>
+                <a href="#" class="nav-link">WOMEN</a>
+                <a href="#" class="nav-link">KIDS</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html" class="logo">MyStore</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">SEARCH</a>
+                <a href="#" class="nav-link">ACCOUNT</a>
+                <a href="cart.html" class="nav-link">CART (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">ALL PRODUCTS</h1>
+            <p class="page-subtitle">Discover our complete collection</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="filters-container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label class="filter-label">CATEGORY</label>
+                    <select class="filter-select">
+                        <option>All Products</option>
+                        <option>YEEZY BOOST 350 V2</option>
+                        <option>YEEZY 500</option>
+                        <option>YEEZY 700</option>
+                        <option>YEEZY SLIDE</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">SIZE</label>
+                    <select class="filter-select">
+                        <option>All Sizes</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">SORT BY</label>
+                    <select class="filter-select">
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Most Popular</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="products-container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <a href="product-detail.html" class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                        <div class="product-badge">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">CREAM WHITE</p>
+                        <p class="product-price">$220</p>
+                    </div>
+                </a>
+
+                <!-- Product 2 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">ZEBRA</p>
+                        <p class="product-price">$220</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                        <div class="product-badge sale">SALE</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 500</h3>
+                        <p class="product-color">BONE WHITE</p>
+                        <p class="product-price">
+                            <span class="price-original">$200</span>
+                            <span class="price-sale">$150</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY 700</h3>
+                        <p class="product-color">WAVE RUNNER</p>
+                        <p class="product-price">$300</p>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY SLIDE</h3>
+                        <p class="product-color">BONE</p>
+                        <p class="product-price">$70</p>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <div class="sneaker-placeholder"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">YEEZY BOOST 350 V2</h3>
+                        <p class="product-color">STATIC</p>
+                        <p class="product-price">$220</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn-primary">LOAD MORE PRODUCTS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">CUSTOMER SERVICE</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">FOLLOW US</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MyStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
